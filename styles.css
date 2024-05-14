@@ -1,0 +1,35 @@
+:root{
+    --task-backgound-color: #ff8b998f;
+    --page-backgound-color: #f0f0f0; 
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--page-backgound-color);
+}
+h1, h2, h3, h4, p, li, ul, table, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.task-container{
+    background-color: var(--task-backgound-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: content-box;
+    margin: 8px;
+    padding: 8px;
+    max-width: 72ch;
+}
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#square {
+    border: 2px dashed;
+    border-color: rgb(83, 71, 255);
+    margin-bottom: 20px;
+}

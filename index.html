@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="task-container">
+            <h2>Завдання 2</h2>
+            <p>Треба ввести текст у поля нижче та натиснути «SWAP ME», щоб обміняти їх вміст:</p>
+            <div>
+                <button id="inputSwapButton">SWAP ME</button>
+                <input type="text" id="input1" placeholder="???">
+                <input type="text" id="input2" placeholder="!!!">
+            </div>
+        </div>
+
+        <div class="task-container">
+            <h2>Завдання 4</h2>
+            <p>Кнопка "Зменшити" робить квадрат менше на 15 пікселів.</p>
+            <p>"Збільшити" – робить квадрат більше на 15 пікселів. </p>
+        
+            <div id="square"></div>
+            <div>
+                <button id="decreaseButton">Зменшити</button>
+                <button id="increaseButton">Збільшити</button>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <h2>Завдання 6</h2>
+            <p>Натиснувши кнопку "Подвоїти", збільшити значення у кожному елементі списку у 2 рази.</p>
+            <p>Натиснувши кнопку "Степінь", ввозведе у 2 степінь.</p>
+            <ul id="list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <div>
+                <button id="doubleButton">Подвоїти</button>
+                <button id="powerButton">Степінь</button>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <h2>Завдання 7</h2>
+            Напиши скрипт, який:
+            <ol>
+                <li>
+                    Порахує і виведе в консоль кількість категорій в ul#categories, тобто елементів li.item.
+                </li>
+                <li>
+                    Для кожного елемента li.item у списку ul#categories, знайде і виведе в консоль текст заголовку елемента (тегу &lt;h2&gt;) і кількість елементів в категорії (усіх &lt;li&gt;, вкладених в нього).
+                </li>
+            </ol>
+            <ul id="categories">
+                <li class="item">
+                  <h2>Animals</h2>
+                  <ul>
+                    <li>Cat</li>
+                    <li>Hamster</li>
+                    <li>Horse</li>
+                    <li>Parrot</li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <h2>Products</h2>
+                  <ul>
+                    <li>Bread</li>
+                    <li>Prasley</li>
+                    <li>Cheese</li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <h2>Technologies</h2>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                  </ul>
+                </li>
+              </ul>
+              <div>
+                <button onclick="categoriesValues()">Кількість категорій</button>
+                <button onclick="categoriesItemsValues()">Кількість елементів категорій</button>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <form class="login-form">
+                <h2>Завдання 8</h2>
+                <p>Під час відправлення форми, перевіряє, чи всі поля заповнені. Якщо не всі, виводиться повідомлення про заповнення всіх полів. Якщо всі поля заповнені, значення полів збираються в об'єкт, виводяться в консоль і поля форми очищаються.</p>
+                <label>
+                  Email
+                  <input type="email" name="email" />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" />
+                </label>
+                <button type="submit">Log in</button>
+            </form>              
+        </div>
+        <div class="task-container">
+            <h2>Завдання 9</h2>
+            <p>Напиши скрипт, який змінює колір фону елемента &lt;body&gt; через інлайн-стиль по кліку на button.change-color і задає це значення кольору текстовим вмістом для span.color.</p>
+            <div class="widget">
+                <p>Background color: <span class="color">-</span></p>
+                <button type="button" class="change-color">Change color</button>
+            </div>              
+        </div>
+
+        <div class="task-container">
+            <h2>Завдання 10</h2>
+            <p>Створи скрипт, що дозволяє користувачеві створювати та очищувати колекцію елементів. Користувач вводить у поле кількість елементів, які хоче створити, та може створити їх, натиснувши кнопку "Create", а також очистити колекцію кнопкою "Destroy".</p>
+            <div id="controls">
+                <input type="number" min="1" max="100" step="1"/>
+                <button type="button" data-create>Create</button>
+                <button type="button" data-destroy>Destroy</button>              
+              </div>
+
+              <div id="boxes"></div>          
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
