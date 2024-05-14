@@ -60,7 +60,7 @@ function powerValues() {
 function categoriesValues(){
     const categoriesList = document.querySelectorAll('#categories .item');
 
-    console.log(`У списку ${categoriesList.length} категорії.`);
+    console.log(`Number of categories: ${categoriesList.length}`);
 }
 
 function categoriesItemsValues(){
@@ -68,7 +68,7 @@ function categoriesItemsValues(){
     categoriesList.forEach(category => {
     const categoryName = category.querySelector('h2').textContent;
     const categoryItemsCount = category.querySelectorAll('ul li').length;
-    console.log(`Категорія: ${categoryName} \nКількість елементів: ${categoryItemsCount}`);
+    console.log(`Category: ${categoryName} \nElements: ${categoryItemsCount}`);
 });
 }
 
