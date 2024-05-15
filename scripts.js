@@ -75,7 +75,7 @@ function categoriesItemsValues(){
 
 const form = document.querySelector('.login-form');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const email = this.elements.email.value.trim();
