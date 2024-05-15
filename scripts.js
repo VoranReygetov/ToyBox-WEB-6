@@ -19,7 +19,7 @@ square.style.width = 150 + 'px';
 square.style.height = 150 + 'px';
 
 function decreaseSize() {
-    let currentSize = parseInt(square.style.width);
+    let currentSize = square.clientHeight;
     if (currentSize > 15) {
         square.style.width = (currentSize - 15) + 'px';
         square.style.height = (currentSize - 15) + 'px';
@@ -27,7 +27,7 @@ function decreaseSize() {
 }
 
 function increaseSize() {
-    let currentSize = parseInt(square.style.width);
+    let currentSize = square.clientHeight;
     square.style.width = (currentSize + 15) + 'px';
     square.style.height = (currentSize + 15) + 'px';
 }
@@ -40,8 +40,8 @@ powerButton.addEventListener('click', powerValues);
 function doubleValues() {
     let listItems = document.querySelectorAll("#list li");
     listItems.forEach(function(item) {
-        let currentValue = parseInt(item.textContent);
-        if (!isNaN(currentValue)) {
+        let currentValue = Number(item.textContent);
+        if (currentValue) {
             item.textContent = currentValue * 2;
         }
     });
@@ -50,8 +50,8 @@ function doubleValues() {
 function powerValues() {
     let listItems = document.querySelectorAll("#list li");
     listItems.forEach(function(item) {
-        let currentValue = parseInt(item.textContent);
-        if (!isNaN(currentValue)) {
+        let currentValue = Number(item.textContent);
+        if (currentValue) {
             item.textContent = currentValue ** 2;
         }
     });
